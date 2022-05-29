@@ -10,6 +10,11 @@
     - name: Import vprofile setup Variable
       include_vars: vars/vprostacksetup
 
+    - name: remove key pair by name
+      amazon.aws.ec2_key:
+        name: vprokey
+        state: absent
+
     - name: Create vprofile ec2 key
       ec2_key:
         name: vprokey
@@ -206,7 +211,7 @@
       copy:
         src: loginkey_vpro.pem
         dest: provision-stack/loginkey_vpro.pem
-        mode: '0400'
+        mode: "0400"
 
     - name: Insert/Update Inventory file provision-stack/inventory-vpro
       blockinfile:
@@ -248,5 +253,3 @@
           ansible_user=ubuntu
           ansible_ssh_private_key_file=loginkey_vpro.pem
           #ansible_python_interpreter=/usr/bin/python3
-
-
