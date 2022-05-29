@@ -22,5 +22,5 @@ zone3: us-west-2c
 state: present
 
 # Bastion Vars
-bastion_ami: ami-081c75eaeac28ac34 # ubuntu 18
+bastion_ami: ami-0ee8244746ec5d6d4 # ubuntu 22
 MYIP: 49.207.218.2/32
