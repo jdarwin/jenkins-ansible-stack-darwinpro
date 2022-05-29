@@ -13,6 +13,7 @@
     - name: remove key pair by name
       amazon.aws.ec2_key:
         name: vprokey
+        region: "{{region}}"
         state: absent
 
     - name: Create vprofile ec2 key
