@@ -1,6 +1,6 @@
-nginx_ami: ami-07efac79022b86107
-tomcat_ami: ami-07efac79022b86107
-memcache_ami: ami-07efac79022b86107
-rmq_ami: ami-07efac79022b86107
-mysql_ami: ami-07efac79022b86107
+nginx_ami: ami-0ee8244746ec5d6d4 # ubuntu 22
+tomcat_ami: ami-0ee8244746ec5d6d4 # ubuntu 22
+memcache_ami: ami-0ee8244746ec5d6d4 # ubuntu 22
+rmq_ami: ami-0ee8244746ec5d6d4 # ubuntu 22
+mysql_ami: ami-0ee8244746ec5d6d4 # ubuntu 22
 
